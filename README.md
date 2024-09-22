@@ -34,4 +34,106 @@ Build and run the Server class to start the server
 Build and run the Client class to start a client and connect to the server
 Follow the prompts in the client to launch and control your robot
 
+Running instructions:
+
+Running the server
+
+
+Run the server:
+
+ $ mvn exec:java -Dexec.mainClass="robot_worlds_13.server.Server"
+
+
+
+
+The port number and address is visible server side, when you run the Server class
+
+
+
+Running the client:
+
+
+Run the client, without the gui:
+
+ $ mvn exec:java -Dexec.mainClass="robot_worlds_13.client.Client"
+     
+ or
+
+ $ mvn exec:java -Dexec.mainClass="robot_worlds_13.client.Client" -Dexec.args="ip_address port"
+
+ e.g mvn exec:java -Dexec.mainClass="robot_worlds_13.client.Client" -Dexec.args="20.20.19.0 2201"
+
+
+
+
+Running the client with the gui:
+
+ Use vscode / intelliJ and run the Client.java class
+
+
+
+
+Ensure you are connected to the correct server and port (The port number is visible server side, when you run the Server class)
+
+
+
+Run tests:
+
+
+Run the tests with the following command:
+
+ mvn test
+
+
+
+
+
+
+Usage:
+
+Client commands:
+Here are some basic commands you can use in the client to control your robot:
+
+forward <steps>: Move the robot forward by the specified number of steps
+back <steps>: Move the robot backward by the specified number of steps
+left: Turn the robot to the left
+right: Turn the robot to the right
+look: Show the current state of the world around the robot
+state: Show the current state of the robot
+fire: Shoot a bullet in the current direction of the robot
+repair: Repair the robot's shields
+reload: Reload the robot's ammo
+off: Quit the client and disconnect from the server
+
+
+
+Server commands:
+Here are some basic commands you can use to control your server:
+
+robots: lists all robots in server
+dump: lists the state of the world
+quit: quit the server
+
+
+
+
+Contributing:
+We welcome contributions to the Robot Worlds project! To contribute, follow these steps:
+
+Fork the repository
+Create a new branch for your feature or bugfix
+Make your changes and commit them to your branch
+Push your changes to your forked repository
+Create a pull request from your forked repository to the original repository
+
+
+
+Contributors:
+
+Summer Ngcobo
+Sindiswa Zama
+Nkosikhona Mlaba
+Thobile Mvuni
+
+
 
